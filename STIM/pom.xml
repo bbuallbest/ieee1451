@@ -1,0 +1,34 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.bbuallbest</groupId>
+  <artifactId>ieee1451.stim</artifactId>
+  <packaging>war</packaging>
+  <version>1.0-SNAPSHOT</version>
+  <name>ieee1451.stim Maven Webapp</name>
+  <url>http://maven.apache.org</url>
+  <properties>
+      <jersey-version>2.13</jersey-version>
+      <servlet.version>3.1.0</servlet.version>
+  </properties>
+  <dependencies>
+      <dependency>
+          <groupId>org.glassfish.jersey.containers</groupId>
+          <artifactId>jersey-container-servlet</artifactId>
+          <version>${jersey-version}</version>
+      </dependency>
+      <dependency>
+          <groupId>org.glassfish.jersey.media</groupId>
+          <artifactId>jersey-media-json-jackson</artifactId>
+          <version>${jersey-version}</version>
+      </dependency>
+      <dependency>
+          <groupId>javax.servlet</groupId>
+          <artifactId>javax.servlet-api</artifactId>
+          <version>${servlet.version}</version>
+      </dependency>
+  </dependencies>
+  <build>
+    <finalName>ieee1451.stim</finalName>
+  </build>
+</project>

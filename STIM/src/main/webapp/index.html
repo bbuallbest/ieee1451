@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>IEEE-1451 STIM</title>
+
+    <!-- Bootstrap -->
+    <link href="static/lib/bootstrap-3.2.0-dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom Style -->
+    <link href="static/css/index.css" rel="stylesheet">
+
+</head>
+<body>
+
+    <div class="jumbotron index-header">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-10 heade-label">
+                    <h1><span class="ieee">IEEE-1451 STIM
+                            <small> implementation for</small>
+                        </span>
+                        <span class="raspberry"> Raspberry</span>
+                        <span class="pi"> Pi</span>
+                    </h1>
+                </div>
+                <div class="col-md-2 heade-img">
+                    <a href="http://www.raspberrypi.org/">
+                        <img src="static/img/rsz-raspberry-pi-logo.png" class="img-rounded">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="content-container">
+            <!--<span class="teds-type">-->
+                <!--<h1>STIM META</h1>-->
+            <!--</span>-->
+            <span class="teds-format">
+                <h2>META-TEDS</h2>
+            </span>
+            <h3><span class="link">
+                <span class="link-protocol">http://</span><span
+                    class="link-prefix">domain:port</span><span
+                    class="link-body">/rest/meta/teds</span><span
+                    class="link-suffix">.json</span>
+            </span></h3>
+            <span class="link"><h3>
+                <span class="link-protocol">http://</span><span
+                    class="link-prefix">domain:port</span><span
+                    class="link-body">/rest/meta/teds</span><span
+                    class="link-suffix">.xml</span>
+            </h3></span>
+            <br/>
+            <span class="teds-format">
+                <h2>CHANNEL-TEDS</h2>
+            </span>
+            <span class="link"><h3>
+                <span class="link-protocol">http://</span><span
+                    class="link-prefix">domain:port</span><span
+                    class="link-body">/rest/channel/{channel-number}/teds</span><span
+                    class="link-suffix">.json</span>
+            </h3></span>
+            <span class="link"><h3>
+                <span class="link-protocol">http://</span><span
+                    class="link-prefix">domain:port</span><span
+                    class="link-body">/rest/channel/{channel-number}/teds</span><span
+                    class="link-suffix">.xml</span>
+            </h3></span>
+            <br/>
+            <span class="teds-format">
+                <h2>CHANNEL-MEASUREMENT</h2>
+            </span>
+            <span class="link"><h3>
+                <span class="link-protocol">http://</span><span
+                    class="link-prefix">domain:port</span><span
+                    class="link-body">/rest/channel/{channel-number}/measurement</span><span
+                    class="link-suffix">.json</span>
+            </h3></span>
+            <span class="link"><h3>
+                <span class="link-protocol">http://</span><span
+                    class="link-prefix">domain:port</span><span
+                    class="link-body">/rest/channel/{channel-number}/measurement</span><span
+                    class="link-suffix">.xml</span>
+            </h3></span>
+            <br/>
+            <br/>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="container">
+            <p class="text-muted"><h4>By bbuallbest. My <a href="https://github.com/bbuallbest">GitHub</a></h4></p>
+        </div>
+    </div>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="static/lib/jquery/jquery-2.1.1.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="static/lib/bootstrap-3.2.0-dist/js/bootstrap.min.js"></script>
+</body>
+</html>

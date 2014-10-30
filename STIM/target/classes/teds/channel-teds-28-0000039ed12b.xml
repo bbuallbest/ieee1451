@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<channel-teds>
+    <data-structure>
+        <calibration-key>0</calibration-key>
+        <standart-family>1</standart-family>
+        <major-version>2</major-version>
+    </data-structure>
+    <transducer>
+        <lower-range-limit>-55</lower-range-limit>
+        <upper-range-limit>125</upper-range-limit>
+        <physical-units>00f0f0f0f0f0f0f0f2f0f0</physical-units>
+        <type>0</type> <!--Sensor-->
+    </transducer>
+    <data-converter>
+        <channel-reade-timestamp>1.50E-5</channel-reade-timestamp>
+        <channel-write-timestamp>1.50E-5</channel-write-timestamp>
+        <channel-sampling-timestamp>1.90E-4</channel-sampling-timestamp>
+    </data-converter>
+    <identification>
+        <uuid>8a0e84ee-e29b-41d4-28-0000039ed12b</uuid>
+        <manufacturer>MAXIM Integrated</manufacturer>
+        <model>DS18B20</model>
+        <revision>24</revision>
+        <serial-number>39ed12b</serial-number>
+        <description>The DS18B20 Digital Thermometer provides 9 to 12-bit (configurable) temperature readings which indicate the temperature of the device.</description>
+    </identification>
+</channel-teds>

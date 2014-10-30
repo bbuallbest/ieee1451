@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<meta-teds id="4821">
+    <data-structure>
+        <calibration-key>0</calibration-key>
+        <standart-family>1</standart-family>
+        <major-version>2</major-version>
+        <implemented-channels>2</implemented-channels>
+    </data-structure>
+    <timing>
+        <worst-update-timestamp>2.00E-5</worst-update-timestamp>
+        <worst-reade-timestamp>8.00E-5</worst-reade-timestamp>
+        <worst-write-timestamp>0</worst-write-timestamp>
+        <worst-sampling-timestamp>2.00E-4</worst-sampling-timestamp>
+        <io-response-timestamp>5.00E-4</io-response-timestamp>
+    </timing>
+    <identification>
+        <uuid>550e8400-e29b-41d4-a716-446655440000</uuid>
+        <manufacturer>Raspberry Pi Foundation</manufacturer>
+        <model>Raspberry Pi B</model>
+        <revision>15</revision>
+        <serial-number>2ABCB-RPI21</serial-number>
+        <description>The Raspberry Pi is a credit card-sized single-board computer developed in the UK by the Raspberry Pi Foundation.</description>
+    </identification>
+</meta-teds>
