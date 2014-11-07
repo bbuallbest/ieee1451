@@ -1,0 +1,10 @@
+.measure {
+    margin: 50px;
+    font-size: 200px;
+}
+#measure-value {
+    color: #428bca;
+}
+#measure-extension {
+    color: #f0ad4e;
+}

@@ -1,9 +1,9 @@
-package com.bbuallbest.stim.entity.teds;
+package com.bbuallbest.ncap.entity.teds;
 
-import com.bbuallbest.stim.entity.teds.util.DataConverter;
-import com.bbuallbest.stim.entity.teds.util.DataStructure;
-import com.bbuallbest.stim.entity.teds.util.Identification;
-import com.bbuallbest.stim.entity.teds.util.Transducer;
+import com.bbuallbest.ncap.entity.teds.util.DataConverter;
+import com.bbuallbest.ncap.entity.teds.util.DataStructure;
+import com.bbuallbest.ncap.entity.teds.util.Identification;
+import com.bbuallbest.ncap.entity.teds.util.Transducer;
 
 import javax.xml.bind.annotation.*;
 

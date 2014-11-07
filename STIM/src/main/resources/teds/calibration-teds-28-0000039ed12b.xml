@@ -1,0 +1,18 @@
+<calibrationTeds>
+    <templateId>40</templateId>
+    <domainParameter>1</domainParameter>
+    <dataSet>
+        <data>
+            <domainValue>152.5</domainValue>
+            <rangeValue>0.001</rangeValue>
+        </data>
+        <data>
+            <domainValue>6.4</domainValue>
+            <rangeValue>0.78</rangeValue>
+        </data>
+        <data>
+            <domainValue>55.89</domainValue>
+            <rangeValue>12.567</rangeValue>
+        </data>
+    </dataSet>
+</calibrationTeds>

@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<channel-teds>
-    <data-structure>
-        <calibration-key>0</calibration-key>
-        <standart-family>1</standart-family>
-        <major-version>2</major-version>
-    </data-structure>
+<channelTeds>
+    <dataStructure>
+        <calibrationKey>0</calibrationKey>
+        <standartFamily>1</standartFamily>
+        <majorVersion>2</majorVersion>
+    </dataStructure>
     <transducer>
-        <lower-range-limit>-55</lower-range-limit>
-        <upper-range-limit>125</upper-range-limit>
-        <physical-units>00f0f0f0f0f0f0f0f2f0f0</physical-units>
+        <lowerRangeLimit>-55</lowerRangeLimit>
+        <upperRangeLimit>125</upperRangeLimit>
+        <physicalUnits>00f0f0f0f0f0f0f0f2f0f0</physicalUnits>
         <type>0</type> <!--Sensor-->
     </transducer>
-    <data-converter>
-        <channel-reade-timestamp>1.50E-5</channel-reade-timestamp>
-        <channel-write-timestamp>1.50E-5</channel-write-timestamp>
-        <channel-sampling-timestamp>1.90E-4</channel-sampling-timestamp>
-    </data-converter>
+    <dataConverter>
+        <channelReadTime>1.50E-5</channelReadTime>
+        <channelWriteTime>1.50E-5</channelWriteTime>
+        <channelSamplingTime>1.90E-4</channelSamplingTime>
+    </dataConverter>
     <identification>
         <uuid>8a0e84ee-e29b-41d4-28-0000039ed12b</uuid>
         <manufacturer>MAXIM Integrated</manufacturer>
         <model>DS18B20</model>
         <revision>24</revision>
-        <serial-number>39ed12b</serial-number>
+        <serialNumber>39ed12b</serialNumber>
         <description>The DS18B20 Digital Thermometer provides 9 to 12-bit (configurable) temperature readings which indicate the temperature of the device.</description>
     </identification>
-</channel-teds>
+</channelTeds>

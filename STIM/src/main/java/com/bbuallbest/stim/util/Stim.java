@@ -10,6 +10,8 @@ public enum Stim {
     CHANNEL_TEDS_PREFIX("channel.teds.prefix"),
     CHANNEL_TEDS_EXTENSION("channel.teds.extension"),
     CHANNEL_ID("channel."),
+    CALIBRATION_TEDS_PREFIX("calibration.teds.prefix"),
+    CALIBRATION_TEDS_EXTENSION("calibration.teds.extension"),
     MEASUREMENT_PATH_PREFIX("measurement.path.prefix"),
     MEASUREMENT_PATH_SUFFIX("measurement.path.suffix");
 

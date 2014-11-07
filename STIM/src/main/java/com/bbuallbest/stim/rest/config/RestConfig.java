@@ -2,6 +2,8 @@ package com.bbuallbest.stim.rest.config;
 
 import com.bbuallbest.stim.rest.resources.ChannelResource;
 import com.bbuallbest.stim.rest.resources.MetaResource;
+import com.bbuallbest.stim.service.converter.ByteConverter;
+import com.bbuallbest.stim.service.converter.StimByteConverter;
 import com.bbuallbest.stim.service.measurement.Ds18b20Measurement;
 import com.bbuallbest.stim.service.measurement.MeasurementService;
 import com.bbuallbest.stim.service.teds.TedsService;
@@ -27,6 +29,9 @@ public class RestConfig extends ResourceConfig{
                         .in(Singleton.class);
                 bind(Ds18b20Measurement.class)
                         .to(MeasurementService.class)
+                        .in(Singleton.class);
+                bind(StimByteConverter.class)
+                        .to(ByteConverter.class)
                         .in(Singleton.class);
             }
         });

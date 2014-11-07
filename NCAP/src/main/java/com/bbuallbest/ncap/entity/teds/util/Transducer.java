@@ -1,6 +1,4 @@
-package com.bbuallbest.stim.entity.teds.util;
-
-import com.bbuallbest.stim.service.encoder.EncodableMarker;
+package com.bbuallbest.ncap.entity.teds.util;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
@@ -9,7 +7,7 @@ import javax.xml.bind.annotation.XmlRootElement;
 
 @XmlAccessorType(XmlAccessType.NONE)
 @XmlRootElement
-public class Transducer implements EncodableMarker{
+public class Transducer {
 
     @XmlElement
     private int lowerRangeLimit;

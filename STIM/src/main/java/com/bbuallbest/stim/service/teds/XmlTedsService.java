@@ -1,5 +1,6 @@
 package com.bbuallbest.stim.service.teds;
 
+import com.bbuallbest.stim.entity.teds.CalibrationTeds;
 import com.bbuallbest.stim.entity.teds.ChannelTeds;
 import com.bbuallbest.stim.entity.teds.MetaTeds;
 import com.bbuallbest.stim.service.util.StimPropertyHandler;
@@ -39,11 +40,26 @@ public class XmlTedsService implements TedsService {
         return getTedsFromXml(channelTedsFile.toString(), ChannelTeds.class);
     }
 
+    @Override
+    public CalibrationTeds getCalibrationTeds(int channelNumber) {
+        String channelAmount = propertyHandler.getProperty(Stim.CHANNEL_AMOUNT.getProperty());
+        if(Integer.parseInt(channelAmount) < channelNumber + 1)
+            return null;
+
+
+        StringBuilder calibrationTedsFile = new StringBuilder();
+        calibrationTedsFile.append(propertyHandler.getProperty(Stim.CALIBRATION_TEDS_PREFIX.getProperty()));
+        calibrationTedsFile.append(propertyHandler.getProperty(Stim.CHANNEL_ID.getProperty() + channelNumber));
+        calibrationTedsFile.append(propertyHandler.getProperty(Stim.CALIBRATION_TEDS_EXTENSION.getProperty()));
+
+        return getTedsFromXml(calibrationTedsFile.toString(), CalibrationTeds.class);
+    }
+
     private <T> T getTedsFromXml(String fileName, Class<T> type) {
         T teds = null;
 
         try {
-
+            System.out.println("fileName = " + fileName);
 //            File file = new File(Path.TEDS_DIR.getPath() + fileName);
             File file = new File(propertyHandler.getProperty(Stim.TEDS_PATH.getProperty()) + fileName);
             JAXBContext context = JAXBContext.newInstance(type);

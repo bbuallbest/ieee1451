@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<meta-teds id="4821">
-    <data-structure>
-        <calibration-key>0</calibration-key>
-        <standart-family>1</standart-family>
-        <major-version>2</major-version>
-        <implemented-channels>2</implemented-channels>
-    </data-structure>
+<metaTeds id="4821">
+    <dataStructure>
+        <calibrationKey>0</calibrationKey>
+        <standartFamily>1</standartFamily>
+        <majorVersion>2</majorVersion>
+        <implementedChannels>2</implementedChannels>
+    </dataStructure>
     <timing>
-        <worst-update-timestamp>2.00E-5</worst-update-timestamp>
-        <worst-reade-timestamp>8.00E-5</worst-reade-timestamp>
-        <worst-write-timestamp>0</worst-write-timestamp>
-        <worst-sampling-timestamp>2.00E-4</worst-sampling-timestamp>
-        <io-response-timestamp>5.00E-4</io-response-timestamp>
+        <worstUpdateTime>2.00E-5</worstUpdateTime>
+        <worstReadeTime>8.00E-5</worstReadeTime>
+        <worstWriteTime>0</worstWriteTime>
+        <worstSamplingTime>2.00E-4</worstSamplingTime>
+        <ioResponseTime>5.00E-4</ioResponseTime>
     </timing>
     <identification>
         <uuid>550e8400-e29b-41d4-a716-446655440000</uuid>
         <manufacturer>Raspberry Pi Foundation</manufacturer>
         <model>Raspberry Pi B</model>
         <revision>15</revision>
-        <serial-number>2ABCB-RPI21</serial-number>
+        <serialNumber>2ABCB-RPI21</serialNumber>
         <description>The Raspberry Pi is a credit card-sized single-board computer developed in the UK by the Raspberry Pi Foundation.</description>
     </identification>
-</meta-teds>
+</metaTeds>

@@ -1,5 +1,6 @@
 package com.bbuallbest.stim.service.teds;
 
+import com.bbuallbest.stim.entity.teds.CalibrationTeds;
 import com.bbuallbest.stim.entity.teds.ChannelTeds;
 import com.bbuallbest.stim.entity.teds.MetaTeds;
 
@@ -9,4 +10,5 @@ import com.bbuallbest.stim.entity.teds.MetaTeds;
 public interface TedsService {
     MetaTeds getMetaTeds();
     ChannelTeds getChannelTeds(int channelNumber);
+    CalibrationTeds getCalibrationTeds(int channelNumber);
 }

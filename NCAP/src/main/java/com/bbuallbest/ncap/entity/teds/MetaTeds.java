@@ -1,8 +1,8 @@
-package com.bbuallbest.stim.entity.teds;
+package com.bbuallbest.ncap.entity.teds;
 
-import com.bbuallbest.stim.entity.teds.util.DataStructure;
-import com.bbuallbest.stim.entity.teds.util.Identification;
-import com.bbuallbest.stim.entity.teds.util.Timing;
+import com.bbuallbest.ncap.entity.teds.util.DataStructure;
+import com.bbuallbest.ncap.entity.teds.util.Identification;
+import com.bbuallbest.ncap.entity.teds.util.Timing;
 
 import javax.xml.bind.annotation.*;
 

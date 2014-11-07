@@ -9,6 +9,9 @@ import javax.xml.bind.annotation.*;
 public class Measurement implements EncodableMarker{
 
     @XmlElement
+    private int channel;
+
+    @XmlElement
     private double value;
 
     @XmlElement
@@ -16,9 +19,18 @@ public class Measurement implements EncodableMarker{
 
     public Measurement() {}
 
-    public Measurement(double value, long timestamp) {
+    public Measurement(int channel, double value, long timestamp) {
+        this.channel = channel;
         this.value = value;
         this.timestamp = timestamp;
+    }
+
+    public int getChannel() {
+        return channel;
+    }
+
+    public void setChannel(int channel) {
+        this.channel = channel;
     }
 
     public double getValue() {
@@ -44,6 +56,7 @@ public class Measurement implements EncodableMarker{
 
         Measurement that = (Measurement) o;
 
+        if (channel != that.channel) return false;
         if (timestamp != that.timestamp) return false;
         if (Double.compare(that.value, value) != 0) return false;
 
@@ -54,8 +67,9 @@ public class Measurement implements EncodableMarker{
     public int hashCode() {
         int result;
         long temp;
+        result = channel;
         temp = Double.doubleToLongBits(value);
-        result = (int) (temp ^ (temp >>> 32));
+        result = 31 * result + (int) (temp ^ (temp >>> 32));
         result = 31 * result + (int) (timestamp ^ (timestamp >>> 32));
         return result;
     }
@@ -63,7 +77,8 @@ public class Measurement implements EncodableMarker{
     @Override
     public String toString() {
         return "Measurement{" +
-                "value=" + value +
+                "channel=" + channel +
+                ", value=" + value +
                 ", timestamp=" + timestamp +
                 '}';
     }

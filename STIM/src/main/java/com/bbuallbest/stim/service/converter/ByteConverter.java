@@ -1,6 +1,7 @@
 package com.bbuallbest.stim.service.converter;
 
 import com.bbuallbest.stim.entity.Measurement;
+import com.bbuallbest.stim.entity.teds.CalibrationTeds;
 import com.bbuallbest.stim.entity.teds.ChannelTeds;
 import com.bbuallbest.stim.entity.teds.MetaTeds;
 
@@ -10,5 +11,6 @@ import com.bbuallbest.stim.entity.teds.MetaTeds;
 public interface ByteConverter {
     byte[] convertMetaTeds(MetaTeds metaTeds);
     byte[] convertChannelTeds(ChannelTeds channelTeds);
+    byte[] convertCalibrationTeds(CalibrationTeds calibrationTeds);
     byte[] convertMeasurement(Measurement measurement);
 }

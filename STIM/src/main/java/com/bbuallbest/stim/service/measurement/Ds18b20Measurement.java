@@ -66,6 +66,6 @@ public class Ds18b20Measurement implements MeasurementService {
         if(Integer.parseInt(channelsAmount) < channel + 1)
             return null;
 
-        return new Measurement(measureTemp(channel), System.currentTimeMillis());
+        return new Measurement(channel, measureTemp(channel), System.currentTimeMillis());
     }
 }
