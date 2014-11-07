@@ -1,0 +1,12 @@
+.container-fluid {
+    margin: 0 auto;
+    text-align: center;
+}
+.chart-container {
+    width: 70%;
+    display: inline-block;
+    text-align:center;
+}
+.header {
+    color: #777;
+}

@@ -17,13 +17,13 @@ public class MetaTeds {
     private int id;
 
     @XmlElement
-    private Identification identification;
+    private DataStructure dataStructure;
 
     @XmlElement
     private Timing timing;
 
     @XmlElement
-    private DataStructure dataStructure;
+    private Identification identification;
 
     public int getId() {
         return id;
